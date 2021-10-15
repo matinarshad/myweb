@@ -1,0 +1,49 @@
+.skills_wrapper {
+  background: linear-gradient(
+      rgba(184, 184, 184, 0.5),
+      rgba(145, 145, 145, 0.5)
+    ),
+    url(../../images/skills_coding.webp);
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.skills_content_container {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.skill {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 45px;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  width: 300px;
+  height: 180px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill p {
+  display: none;
+}
+
+.skill:hover {
+  box-shadow: 0 0 59px rgba(255, 78, 0, 0.19);
+  border: 1px solid #ff4e00;
+  justify-content: start;
+  align-items: flex-start;
+  height: 200px;
+}
+
+.skill:hover p {
+  display: block;
+}

@@ -1,0 +1,44 @@
+.banner_wrrapper {
+  height: 90vh;
+  max-width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_wrrapper_content {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: #fff;
+  width: 400px;
+  max-width: 100%;
+}
+
+.banner_wrrapper_content h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.banner_wrrapper_content h1 span {
+  color: #2eca7f;
+}
+
+.banner_wrrapper_content h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.banner_wrrapper_content h2 span {
+  font-size: 25px;
+  color: #2eca7f;
+}
+
+@media only screen and (max-width: 991px) {
+  .banner_wrrapper_content h1 {
+    font-size: 30px;
+  }
+
+  .banner_wrrapper_content h2 {
+    font-size: 30px;
+  }
+}

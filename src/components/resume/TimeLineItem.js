@@ -1,16 +1,15 @@
 import React from "react";
 
-function TimeLineItem() {
+function TimeLineItem({ title, date, location, description }) {
   return (
     <>
       <div className="resume_timeline">
         <div className="resume_timeline_item">
-          <h4 class="resume_timeline_item_title">Specialization Course</h4>
-          <span className="color_span">2010</span>
-          <span>Apple Inc</span>
+          <h4 class="resume_timeline_item_title">{title && title}</h4>
+          <span className="color_span">{date && date}</span>
+          <span>{location && location}</span>
           <p class="resume_timeline_item_description">
-            Mauris magna sapien, pharetra consectetur fringilla vitae, interdum
-            sed tortor.
+            {description && description}
           </p>
         </div>
       </div>

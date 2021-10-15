@@ -4,6 +4,7 @@
   top: 0;
   background-color: #ffffff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .header {
@@ -12,6 +13,7 @@
   justify-content: space-between;
   margin: auto;
   max-width: 100%;
+  padding: 0px 10px;
 }
 
 .header_nav {
@@ -31,4 +33,50 @@
 .header_nav ul li a {
   text-decoration: none;
   color: #49515d;
+}
+
+.menu_bar {
+  display: none;
+  position: absolute;
+  right: 2%;
+  font-size: 20px;
+  top: 20px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.active {
+  height: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .menu_bar {
+    display: block;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_logo {
+    align-self: baseline;
+  }
+
+  .header_nav {
+    width: 70%;
+    height: 400px;
+    overflow: auto;
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .header_nav ul {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
 }

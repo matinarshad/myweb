@@ -2,6 +2,7 @@
   width: 1000px;
   margin: 30px auto auto auto;
   max-width: 100%;
+  padding: 10px;
 }
 
 .resume_banner {
@@ -97,4 +98,14 @@
 
 .resume_content div {
   width: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .resume_content {
+    flex-direction: column;
+  }
+
+  .resume_content div {
+    width: 98%;
+  }
 }
